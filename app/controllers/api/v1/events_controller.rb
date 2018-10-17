@@ -21,7 +21,7 @@ class Api::V1::EventsController < ApplicationController
       end
   end
 
-  def destory
+  def destroy
     @event = Event.find(params[:id])
       unless @event.nil?
         @event.destroy
