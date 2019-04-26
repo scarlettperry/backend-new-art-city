@@ -1,24 +1,59 @@
-# README
+# New Art City!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+*New Art City!*, an information gathering application for art lovers/casual enthusiasts to browse and bookmark current art exhibitions in NYC.
 
-Things you may want to cover:
+**Check out the hosted project on Heroku:** https://new-art-city.herokuapp.com/
 
-* Ruby version
+![Screenshot](readmeImg1.png)
 
-* System dependencies
+![Screenshot](readmeImg2.png)
 
-* Configuration
+## Video Demo
+https://drive.google.com/file/d/1LNDjMwa7zMj-zvyjvWM3HTqTp4oGObOI/view
 
-* Database creation
+## Application Features
+- User can filter art exhibits by multiple media categories.
 
-* Database initialization
+- User can view art exhibits by location on Google Maps.
 
-* How to run the test suite
+- User can bookmark art exhibits to their profile.
 
-* Services (job queues, cache servers, search engines, etc.)
+- User can plan their visit to their bookmarked exhibits using the calendar, which takes in a range of dates and filters exhibits happening during the date range.
 
-* Deployment instructions
 
-* ...
+## Backend Built With
+- Ruby
+- Rails API utilizing Active Model Serializers
+- Sqlite3 Database using ActiveRecord
+
+## Frontend Built With
+- React
+- Google Maps `react-google-maps`
+- Calendar `react-day-picker`
+
+
+## Front-End Repository
+https://github.com/scarlettperry/new-art-city
+
+## Server-Side Install Instructions
+1. Run `bundle install`
+2. Run `rake db:create`
+3. Run `rake db:migrate`
+4. Run `rake db:seed`
+5. Run `rails s -p 3000`
+
+## Client-Side Install Instructions
+1. Run `npm install`
+2. Run `npm start`
+
+## Contributing
+[Contributing Guide](./CONTRIBUTING.md)
+
+## Author
+**Scarlett Perry**
+
+## License
+[License](./LICENSE.md)
+
+## Acknowledgments
+Big thank you to Prince Wilson, Tony Lam & Eric Kim
